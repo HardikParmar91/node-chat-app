@@ -88,3 +88,7 @@ io.on('connection',(socket)=>{
 server.listen(PORT,()=>{
     console.log('Server is up and running on port ',PORT);
 });
+
+window.addEventListener("message", function(e) { 
+   alert(e.data.toString());
+});

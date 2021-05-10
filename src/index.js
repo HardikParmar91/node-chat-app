@@ -97,3 +97,10 @@ window.parent.postMessage("Hello world.", "*");
 
 let untrusted_ajax_res = document.write(location.replace("https://www.w3schools.com"));
 document.getElementById("temp").innerHTML=untrusted_ajax_res;
+
+var regex = new RegExp(currentUnit+'\.'+currentWeek+'\.'+currentBookType);
+if(!k.match(regex))	{				
+								if (typeof val == "string" && val.match(/\d*\|\d*/)) {
+									prevWeekWordCount += parseInt(val.split("|")[0]);  // calculate previous weeks word count
+								}
+							}

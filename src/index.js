@@ -92,3 +92,8 @@ server.listen(PORT,()=>{
 window.addEventListener("message", function(e) { 
    alert(e.data.toString());
 });
+
+window.parent.postMessage("Hello world.", "*");
+
+let untrusted_ajax_res = document.write(location.replace("https://www.w3schools.com"));
+document.getElementById("temp").innerHTML=untrusted_ajax_res;

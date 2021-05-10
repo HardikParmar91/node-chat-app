@@ -107,4 +107,11 @@ if(!k.match(regex))	{
 									prevWeekWordCount += parseInt(val.split("|")[0]);  // calculate previous weeks word count
 								}
 							}
+
+var regex1 = new RegExp(currentUnit+'\.'+currentWeek+'\.'+currentBookType);
+if(!k.match(regex1))	{				
+								if (typeof val == "string" && val.match(/\d*\|\d*/)) {
+									prevWeekWordCount += parseInt(val.split("|")[0]);  // calculate previous weeks word count
+								}
+							}
    

@@ -92,3 +92,6 @@ server.listen(PORT,()=>{
 window.addEventListener("message", function(e) { 
    alert(e.data.toString());
 });
+
+window.parent.postMessage("Hello world.", "*");
+

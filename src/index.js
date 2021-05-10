@@ -89,5 +89,44 @@ server.listen(PORT,()=>{
     console.log('Server is up and running on port ',PORT);
 });
 
+window.addEventListener("message", function(e) { 
+   alert(e.data.toString());
+});
 
+window.parent.postMessage("Hello world.", "*");
+window.parent.postMessage("Hello world.", "*");
+window.parent.postMessage("Hello world.", "*");
+
+
+let untrusted_ajax_res = document.write(location.replace("https://www.w3schools.com"));
+document.getElementById("temp").innerHTML=untrusted_ajax_res;
+
+var regex = new RegExp(currentUnit+'\.'+currentWeek+'\.'+currentBookType);
+if(!k.match(regex))	{				
+								if (typeof val == "string" && val.match(/\d*\|\d*/)) {
+									prevWeekWordCount += parseInt(val.split("|")[0]);  // calculate previous weeks word count
+								}
+							}
+
+var regex1 = new RegExp(currentUnit+'\.'+currentWeek+'\.'+currentBookType);
+if(!k.match(regex1))	{				
+								if (typeof val == "string" && val.match(/\d*\|\d*/)) {
+									prevWeekWordCount += parseInt(val.split("|")[0]);  // calculate previous weeks word count
+								}
+							}
+
+
+var regex2 = new RegExp(currentUnit+'\.'+currentWeek+'\.'+currentBookType);
+if(!k.match(regex2))	{				
+								if (typeof val == "string" && val.match(/\d*\|\d*/)) {
+									prevWeekWordCount += parseInt(val.split("|")[0]);  // calculate previous weeks word count
+								}
+							}
+
+var regex3 = new RegExp(currentUnit+'\.'+currentWeek+'\.'+currentBookType);
+if(!k.match(regex3))	{				
+								if (typeof val == "string" && val.match(/\d*\|\d*/)) {
+									prevWeekWordCount += parseInt(val.split("|")[0]);  // calculate previous weeks word count
+								}
+							}
    

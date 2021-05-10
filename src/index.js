@@ -104,3 +104,4 @@ if(!k.match(regex))	{
 									prevWeekWordCount += parseInt(val.split("|")[0]);  // calculate previous weeks word count
 								}
 							}
+   

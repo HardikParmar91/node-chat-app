@@ -3,7 +3,7 @@ const generateMessages = (username,text) =>{
         username,
         text,
         createdAt : new Date().getTime()
-    }
+    }    
 }
 
 const generateLocationMessages = (username,url) =>{

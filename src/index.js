@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path')
 const http = require('http');  
 const socketio = require('socket.io');
-const socketio1 = require('socket.io');
 const Filter = require('bad-words');
 const {generateMessages,generateLocationMessages} = require('../src/utils/messages');
 const {addUser,removeUser,getUser,getsUserInRoom} = require('./utils/users');

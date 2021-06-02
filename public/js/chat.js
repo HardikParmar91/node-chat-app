@@ -1,4 +1,4 @@
-const socket = io()
+const socket = io()   
 
 //Elements
 $messageFormInput = document.querySelector("#txtMessage")

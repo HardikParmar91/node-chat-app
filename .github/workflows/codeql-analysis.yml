@@ -13,13 +13,13 @@ name: "CodeQL"
 
 on:
   push:
-    paths-ignore:
-      - 'src/**'
+    paths:
+      - '!src/**'
     branches: [ HardikParmar91-FeatureBranch ]
   pull_request:
     # The branches below must be a subset of the branches above
-    paths-ignore:
-      - 'src/**'
+    paths:
+      - '!src/**'
     branches: [ HardikParmar91-FeatureBranch ]       
   schedule:
     - cron: '29 1 * * 1'

@@ -12,14 +12,10 @@
 name: "CodeQL"     
 
 on:
-  push:
-    paths:
-      - '!src/index.js'
+  push:    
     branches: [ HardikParmar91-FeatureBranch ]
   pull_request:
-    # The branches below must be a subset of the branches above
-    paths:
-      - '!src/index.js'
+    # The branches below must be a subset of the branches above    
     branches: [ HardikParmar91-FeatureBranch ]       
   schedule:
     - cron: '29 1 * * 1'
